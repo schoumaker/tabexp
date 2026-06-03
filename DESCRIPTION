@@ -1,0 +1,13 @@
+Package: tabexp
+Title: Creating a table of births and exposure from a DHS-like birth history
+Version: 0.1.0
+Authors@R: 
+    person("Bruno", "Schoumaker", , "bruno.schoumaker@uclouvain.be", role = c("aut", "cre"))
+Description: tabexp creates a table of births and exposure from a DHS-like birth history. By default, it uses the variable names of the DHS. Weights and all-women factors are used. The table can be used to compte ASFRs.
+License: `use_gpl3_license()` 
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    data.table,
+    haven

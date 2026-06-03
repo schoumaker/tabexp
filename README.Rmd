@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# tabexp
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of tabexp is to create a table of births and exposure from a DHS-like birth history. It uses the same structure as the individual recode data file in DHS. You can use a data frame or a data table in R, or directly call a DHS Stata file from R.
+
+## Installation
+
+You can install the development version of tabexp like so:
+
+``` r
+# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(tabexp)
+tabexp(data = AMIR54FL)
+```
+

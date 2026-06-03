@@ -1,0 +1,5 @@
+^renv$
+^renv\.lock$
+^tabexp\.Rproj$
+^\.Rproj\.user$
+^README\.Rmd$
