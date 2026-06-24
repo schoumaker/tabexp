@@ -13,20 +13,71 @@ knitr::opts_chunk$set(
 )
 ```
 
+---
+title: "tabexp"
+output: github_document
+---
+
 # tabexp
 
-<!-- badges: start -->
-<!-- badges: end -->
+`tabexp` is an R package for fertility estimation using exact exposure methods. The goal of `tabexp` is to create a table of births and exposure from a DHS-like birth history. It uses the same structure as the individual recode data file in DHS. You can use a data frame or a data table in R, or directly call a DHS Stata file from R.
 
-The goal of tabexp is to create a table of births and exposure from a DHS-like birth history. It uses the same structure as the individual recode data file in DHS. You can use a data frame or a data table in R, or directly call a DHS Stata file from R.
+
+The package was developed to reproduce and extend the logic of Stata's `tabexp.ado` and related fertility estimation procedures.
 
 ## Installation
 
-You can install the development version of tabexp like so:
+Install the development version from GitHub:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```r
+# install.packages("remotes")
+remotes::install_github("schoumaker/tabexp")
 ```
+
+## Main features
+
+- Exact exposure calculations
+- Age-specific fertility rates (ASFR)
+- Total fertility rates (TFR)
+- Replication of Stata `tabexp` procedures
+
+## Example
+
+Load the package:
+
+```r
+library(tabexp)
+```
+
+Example fertility calculation:
+
+```r
+# hypothetical example
+result <- tabexp(
+  data = births_data,
+  age = "age",
+  birth = "birth"
+)
+
+result
+```
+
+## Comparison with Stata
+
+The package aims to closely reproduce the behavior of:
+
+```stata
+tabexp
+```
+
+while providing a fully R-based workflow.
+
+## Author
+
+Bruno Schoumaker
+
+## License
+
 
 ## Example
 

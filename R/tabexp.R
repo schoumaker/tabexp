@@ -79,6 +79,8 @@ tabexp <- function(data = NULL,
   setkey(intervals, caseid, start, end)
 
   events <- foverlaps(births_long, intervals, by.x = c("caseid", "start", "end"), nomatch = 0)
+
+
   birth_counts <- events[, .(births = .N), by = .(caseid, start, age_group, YBS)]
   setnames(birth_counts, "start", "start_cmc")
 
