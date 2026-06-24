@@ -9,7 +9,7 @@ tabexp(
   data = NULL,
   ybs_max = 40,
   age_bins = seq(10, 50, by = 5),
-  birth_vars = sprintf("b3_\%02d", 1:20),
+  birth_vars = NULL,
   default_vars = c("caseid", "v011", "v008", "v005", "awfactt")
 )
 }
